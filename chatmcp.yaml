@@ -1,0 +1,24 @@
+name: date-tool-mcp
+description: date
+author: https://github.com/liwen4879-collab/date-tool
+license: MIT
+tags:
+  - date-tool
+  - datetime
+
+params:
+  type: object
+  properties: {}
+
+local: |
+  python server.py
+
+config: |
+  {
+    "mcpServers": {
+      "date-tool-mcp": {
+        "command": "python",
+        "args": ["server.py"]
+      }
+    }
+  }
